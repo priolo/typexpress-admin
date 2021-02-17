@@ -1,0 +1,24 @@
+{
+	"name": "riceverai_istruzioni",
+	"version": "0.1.0",
+	"private": false,
+	"dependencies": {
+		"typexpress": "file://C:/Users/iorio/Documents/typexpress/repository",
+		"typeorm": "^0.2.31"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.8",
+		"@types/node": "^14.14.7",
+		"@types/jest": "^26.0.15",
+		"typescript": "^4.1.5",
+		"@tsconfig/node12": "^1.0.7"
+	},
+	"scripts": {
+		"build": "tsc",
+		"build-watch": "tsc -w",
+		"build-test": "tsc && jest dist",
+		"start": "node dist/start.js",
+		"test": "jest dist",
+		"test-watch": "jest dist --watch"
+	}
+}
