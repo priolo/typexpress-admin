@@ -40,7 +40,7 @@ const PORT = process.env.PORT || 8080;
 						},
 						{
 							class: "http-static",
-							dir: "C:/Users/iorio/Documents/typexpress/repository/admin-client/build",
+							dir: path.join(__dirname, "../../client/build"),
 							path: "/",
 							spaFile: "index.html",
 						},						
@@ -65,7 +65,7 @@ const PORT = process.env.PORT || 8080;
 					class: "typeorm",
 					typeorm: {
 						"type": "sqlite",
-						"database": "C:/Users/iorio/Documents/typexpress/repository/admin-db/database.sqlite",
+						"database": path.join(__dirname, "../../db/database.sqlite"),
 						"synchronize": true,
 						"logging": true,
 						"entities": [path.join(__dirname, "./models/*.js")],
